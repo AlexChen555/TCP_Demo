@@ -1,0 +1,27 @@
+10-29 20:02:35.813 8797-8797/com.dream.tcp E/AndroidRuntime: FATAL EXCEPTION: main
+ Process: com.dream.tcp, PID: 8797
+ android.os.NetworkOnMainThreadException
+     at android.os.StrictMode$AndroidBlockGuardPolicy.onNetwork(StrictMode.java:1303)
+     at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+     at java.net.SocketOutputStream.write(SocketOutputStream.java:157)
+     at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+     at sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:291)
+     at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:295)
+     at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
+     at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
+     at java.io.BufferedWriter.flush(BufferedWriter.java:254)
+     at java.io.PrintWriter.newLine(PrintWriter.java:482)
+     at java.io.PrintWriter.println(PrintWriter.java:629)
+     at java.io.PrintWriter.println(PrintWriter.java:740)
+     at com.dream.tcp.TcpClient$1.run(TcpClient.java:228)
+     at android.os.Handler.handleCallback(Handler.java:754)
+     at android.os.Handler.dispatchMessage(Handler.java:95)
+     at android.os.Looper.loop(Looper.java:163)
+     at android.app.ActivityThread.main(ActivityThread.java:6377)
+     at java.lang.reflect.Method.invoke(Native Method)
+     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:794)
+
+data:
+     STR|3|1/Port1/0.00CM|2/Port5/152.74C|3/Port3,Port6/0,312|END
+
